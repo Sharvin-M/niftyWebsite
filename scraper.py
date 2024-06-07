@@ -13,7 +13,7 @@ def scrapee(url):
         if all_links[i].text == "(Video)" or all_links[i].text == "PDF version":
             continue
         text.append(all_links[i].text)
-        tag.append(('http://nifty.stanford.edu/' + str(all_links[i].get("href"))))
+        tag.append(("http://nifty.stanford.edu/" + str(all_links[i].get("href"))))
     print(text)
     print(tag)
 
