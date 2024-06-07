@@ -1,4 +1,5 @@
 import requests
+import random
 from bs4 import BeautifulSoup as bs
 
 
@@ -14,7 +15,6 @@ def scrapee(url):
             continue
         text.append(all_links[i].text)
         tag.append(("http://nifty.stanford.edu/" + str(all_links[i].get("href"))))
-    print(text)
-    print(tag)
 
-    return {k: v for (k, v) in zip(tag, text)}
+    dict = {k: v for (k, v) in zip(tag, text)}
+    return random.choice(list(dict.items()))

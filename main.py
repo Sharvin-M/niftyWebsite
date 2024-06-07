@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get(
     "/",
-    description="Recieve a key:value store with the latest from Stanford's Nifty Projects List",
+    description="Recieve a singular, randomly chosen, key:value pair from Stanford's Nifty Projects List",
 )
 async def read_projects():
     return scrapee("http://nifty.stanford.edu/")
