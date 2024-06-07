@@ -1,4 +1,9 @@
+from fastapi import FastAPI
+from scraper import scrapee
+
+app = FastAPI()
 
 
-
-print('hello world')
+@app.get("/")
+def read_projects():
+    return scrapee("http://nifty.stanford.edu/")
