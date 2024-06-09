@@ -1,12 +1,13 @@
 from fastapi import FastAPI
 from scraper import scrapee
+from mangum import Mangum
 
 app = FastAPI()
-
+handler = Mangum(app)
 
 @app.get(
     "/",
-    description="Recieve a singular, randomly chosen, key:value pair from Stanford's Nifty Projects List",
+    description="Receive a singular, randomly chosen, key:value pair from Stanford's Nifty Projects List",
 )
-async def read_projects():
+async def root():
     return scrapee("http://nifty.stanford.edu/")
