@@ -1,7 +1,4 @@
 virtualenv
 .ruff_cache
 __pycache__
-lib
-dependencies
-*.zip
-*.txt
+node_modules
