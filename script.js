@@ -11,7 +11,7 @@ function nifty() {
   xhttp.open(
     "GET",
     "https://5xuj7ap5ok.execute-api.us-west-1.amazonaws.com/prod/",
-    true
+    true,
   );
   xhttp.send();
 }
