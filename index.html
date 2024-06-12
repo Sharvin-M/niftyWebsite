@@ -5,12 +5,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Nifty Projects</title>
   </head>
-  <h1>click the button for a random coding project!</h1>
-  <script src="script.js" crossorigin=anonymous"></script>
   <body>
+    <h1>Click the button for a random coding project!</h1>
     <div class="container">
-    <button onclick="nifty()" class="fancyBtn"> click me! </button>
+      <button onclick="nifty()" class="fancyBtn">Click me!</button>
     </div>
-    <div id="projects"></div>
+    <div id="response-container">
+      <div id="name" class="response-container"></div>
+      <div id="projects" class="response-container"></div>
+    </div>
+    <script src="script.js" crossorigin="anonymous"></script>
   </body>
 </html>

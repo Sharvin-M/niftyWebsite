@@ -2,7 +2,7 @@ virtualenv
 .ruff_cache
 __pycache__
 node_modules
-*.txt
-*.zip
+requirements.txt
+niftyVersions
 lib
 .DS_Store
