@@ -1,15 +1,37 @@
-button {
-    position: relative;
-    margin-top: 30%;
-    left: 35%;
-    font-size: 50px;
+.container {
+    display: flex;
+align-items: center;
+justify-content: center;
+} 
 
+.fancyBtn {
+  background-color: #deb1d8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.fancyBtn:hover {
+  background-color: #a04597;
 }
 
 h1 {
-    position: absolute;
-    margin-top: 10%;
-    left: 35%;
-    font-size: 50px;
-
+  font-size: 80px;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
 }
