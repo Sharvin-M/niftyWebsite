@@ -1,4 +1,4 @@
-## Concurrent API for Stanfords Nifty Projects Directory
+## Scraper API for Stanfords Nifty Projects Directory
 
 ### https://niftyprojects.netlify.app/
 
